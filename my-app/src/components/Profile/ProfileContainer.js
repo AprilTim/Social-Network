@@ -3,7 +3,7 @@ import './Profile.css';
 import {connect} from "react-redux";
 import Profile from "./Profile";
 import * as axios from "axios";
-import {setUserProfile} from "../../redux/profile-reducer";
+import {setUserProfile, showContacts} from "../../redux/profile-reducer";
 import {withRouter} from "react-router-dom";
 
 
@@ -23,15 +23,18 @@ class ProfileContainerAPI extends React.Component {
     render() {
 
         return (
-            <Profile {...this.props} profile={this.props.profile}/>
+            <Profile {...this.props}
+                     profile={this.props.profile}
+                     isContacts={this.props.isContacts}/>
         );
     }
 }
 
 let mapStateToProps = (state) => ({
-    profile: state.profilePage.profile
+    profile: state.profilePage.profile,
+    isContacts: state.profilePage.isContacts
 })
 
 let WithURLDataRouterComp = withRouter(ProfileContainerAPI);
 
-export default connect(mapStateToProps, {setUserProfile})(WithURLDataRouterComp);
+export default connect(mapStateToProps, {setUserProfile,showContacts})(WithURLDataRouterComp);

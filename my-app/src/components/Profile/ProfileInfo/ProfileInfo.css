@@ -4,13 +4,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile_info {
+
     position: relative;
     top: -50px;
     margin: 0 auto;
     width: 80%;
 
     display: grid;
-
     grid-template-columns: 1fr 6fr;
     grid-gap: 50px;
 
@@ -18,14 +18,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutMe {
-    padding: 5px;
+    padding: 2px 8px;
 
     display: inline-block;
     margin: 0 0 20px;
 
     border-radius: 10px;
-    color: rgba(241,106,143);
-    background: rgb(216, 217, 238,0.9);
+    color: rgb(169, 51, 83);
+    background: rgb(216, 217, 238, 0.9);
 }
 
 .contacts {
@@ -36,13 +36,24 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 15px;
 }
 
+.contactsBtn {
+    padding: 2px;
+    font: inherit;
+    color: inherit;
+    background: rgb(169, 51, 83);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
 .__bold {
     font-weight: bolder;
 }
 .profile_avatar {
 
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
 
     border: #f780a1 solid 3px;
     border-radius: 50%;

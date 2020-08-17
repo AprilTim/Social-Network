@@ -5,21 +5,20 @@ body {
 }
 
 .app-wrapper {
-  margin: 0 auto;
+
+  margin: 50px auto 0;
   max-width: 1170px;
   min-height: 100vh;
   height: 100%;
 
   display: grid;
-
   grid-template-areas:
   "h h"
   "n c";
-  grid-template-rows: 50px 1fr;
   grid-template-columns: 2fr 10fr;
 
   overflow: hidden;
-  background: #151932;
+
 
 }
 

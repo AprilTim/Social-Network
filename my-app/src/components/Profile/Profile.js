@@ -13,7 +13,9 @@ const Profile = (props) => {
     return (
         <div className='container'>
             <div className='profile_img'></div>
-            <ProfileInfo profile={props.profile}/>
+            <ProfileInfo profile={props.profile}
+                         showContacts={props.showContacts}
+                         isContacts={props.isContacts}/>
             <MyPostsContainer store={props.store}/>
         </div>
     );

@@ -1,9 +1,11 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 const SET_USER_PROFILE = 'SET-USER-PROFILE'
+const SHOW_CONTACTS = 'SHOW-CONTACTS'
 
 let initialState = {
     profile: null,
+    isContacts: false,
     postsData: [
         {id: 1, message: "Hi, i am ready to start", likeCount: 4},
         {id: 2, message: "Hello World!", likeCount: 16},
@@ -36,6 +38,16 @@ const profileReducer = (state = initialState, action) => {
             return {
                 ...state, profile: {...action.profile}
             }
+        case SHOW_CONTACTS:
+            console.log(state.isContacts)
+            if (state.isContacts){
+                return {
+                    ...state, isContacts: false
+                }
+            }
+            return {
+                ...state, isContacts: true
+            }
         default:
             return state;
     }
@@ -43,6 +55,7 @@ const profileReducer = (state = initialState, action) => {
 
 export let addPostActionCreator = () => ({type: ADD_POST})
 export let setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
+export let showContacts = () => ({type: SHOW_CONTACTS})
 export let updateNewPostTextActionCreator = (text) => {
     return {type: UPDATE_NEW_POST_TEXT, newText: text}
 }

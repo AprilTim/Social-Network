@@ -1,6 +1,6 @@
 import React from "react";
 import './FindUsers.css'
-import userPhoto from "../../assets/img/user.jpg";
+import userPhoto from "./../../assets/img/user.jpg";
 import {NavLink} from "react-router-dom";
 
 const FindUsers = (props) => {

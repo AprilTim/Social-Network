@@ -1,7 +1,7 @@
 .nav {
     grid-area: n;
 
-    background: #252c48;
+    background: rgb(37, 44, 72, 0.3);
     z-index: 100;
     box-shadow:  0 0 10px rgba(0,0,0,0.3);
 
