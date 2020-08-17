@@ -1,0 +1,41 @@
+.nav {
+    grid-area: n;
+
+    background: #252c48;
+    z-index: 100;
+    box-shadow:  0 0 10px rgba(0,0,0,0.3);
+
+}
+
+.menu {
+    min-height: 280px;
+}
+
+.item{
+    margin: 0 auto;
+    padding: 18px 0;
+
+    max-width: 70%;
+
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: #f16a8f;
+}
+
+.friends {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.active {
+    transition: color 0.3s;
+    color: #f1b27d;
+}
+
+.item__mt {
+    margin-top: 15px;
+}

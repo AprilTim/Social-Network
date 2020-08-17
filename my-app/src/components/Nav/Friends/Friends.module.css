@@ -1,0 +1,15 @@
+.friend {
+    margin: 20px auto 0;
+    height: 45px;
+    width: 45px;
+
+    text-align: center;
+    text-decoration: none;
+    color: #d8d9ee;
+
+    border: #f16a8f solid 2px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: url("https://freedesignfile.com/upload/2018/07/Dark-flowers-Stock-Photo.jpg") no-repeat center;
+    background-size: auto 100%;
+}

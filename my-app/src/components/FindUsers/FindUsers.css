@@ -1,0 +1,46 @@
+
+.find_user {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+    margin: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.find_user__item {
+    margin: 0 auto;
+}
+
+.userDicription {
+    margin-left: 10px;
+    padding: 10px;
+
+
+
+    border-radius: 20px;
+    background: rgba(216, 103, 148, 0.4);
+}
+
+.userDicription__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userDicription__adress {
+    text-align: right;
+}
+
+.selectedPage {
+    color: gold;
+}
+
+.btn {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background: gold;
+}

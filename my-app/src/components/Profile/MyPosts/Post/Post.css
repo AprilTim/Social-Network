@@ -1,0 +1,29 @@
+.post {
+    margin: 20px auto;
+    min-height: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+    font-size: 18px;
+    text-align: left;
+}
+
+.post_avatar {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: #f16a8f solid 2px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.post_avatar img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50px;
+    height:50px;
+    object-fit:cover;
+}

@@ -1,0 +1,17 @@
+.header {
+    grid-area: h;
+    background: #252c48;
+    z-index: 1000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:  0 0 50px rgb(64, 204, 239);
+}
+
+.header_logo {
+    width: 60px;
+}
+
+.headerText {
+    margin: 5px 20px 0;
+    font-size: 26px;
+}

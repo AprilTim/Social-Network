@@ -1,0 +1,8 @@
+.profile_img {
+    height: 200px;
+    text-align: center;
+    vertical-align: bottom;
+
+    border-radius: 20px;
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2255cc24-c8ca-45d6-b011-b2d747a3ec4a/dctl6p2-01ad52f9-a235-4aa4-b8f6-a0f27becb80a.png/v1/fill/w_1078,h_379,q_80,strp/purple_aesthetic_header_by_slushie03_dctl6p2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0zNzkiLCJwYXRoIjoiXC9mXC8yMjU1Y2MyNC1jOGNhLTQ1ZDYtYjAxMS1iMmQ3NDdhM2VjNGFcL2RjdGw2cDItMDFhZDUyZjktYTIzNS00YWE0LWI4ZjYtYTBmMjdiZWNiODBhLnBuZyIsIndpZHRoIjoiPD0xMDc4In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.v1HHQssE2zuQ3fbzw0rez0qnT804_IGZ_Fut__3hEqM") no-repeat bottom;
+}

@@ -1,0 +1,27 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+}
+
+.dialogs_list {
+
+}
+
+.message {
+    padding: 20px;
+    margin: 20px;
+    max-height: 80%;
+
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    border-radius: 15px;
+    background: rgba(98, 33, 193, 0.5);
+}
+
+.message_new {
+    margin: 20px 0 0;
+    width: 100%;
+    height: 100px;
+}
