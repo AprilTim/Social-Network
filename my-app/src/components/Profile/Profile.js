@@ -6,16 +6,18 @@ import Loading from "../FindUsers/Loading";
 
 
 const Profile = (props) => {
-    if(!props.profile){
+    if (!props.profile) {
         return <Loading/>
     }
 
     return (
-        <div className='container'>
-            <div className='profile_img'></div>
+        <div className='profile-container'>
+
             <ProfileInfo profile={props.profile}
                          showContacts={props.showContacts}
-                         isContacts={props.isContacts}/>
+                         isContacts={props.isContacts}
+                         status={props.status}
+                         updateStatus={props.updateStatus}/>
             <MyPostsContainer store={props.store}/>
         </div>
     );

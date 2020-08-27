@@ -4,17 +4,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile_info {
-
-    position: relative;
-    top: -50px;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-gap: 50px;
 
     text-align: left;
+}
+
+.profile-info_sidebar {
+    min-height: 100%;
+    position: relative;
+    top: -75px;
+
+    display: grid;
+    grid-template-areas:
+          "a a"
+          "g s";
+    align-content: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.following {
+    grid-area: g;
+}
+
+.followers {
+    grid-area: s;
 }
 
 .aboutMe {
@@ -36,29 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 15px;
 }
 
-.contactsBtn {
-    padding: 2px;
-    font: inherit;
-    color: inherit;
-    background: rgb(169, 51, 83);
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-.__bold {
-    font-weight: bolder;
-}
 .profile_avatar {
+    grid-area: a;
+    height: 150px;
+    width: 150px;
 
-    height: 200px;
-    width: 200px;
-
-    border: #f780a1 solid 3px;
+    border: #6E6984 solid 3px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow:  0 0 20px rgba(246,106,143,0.9);
 }
 
 .profile_avatar img {

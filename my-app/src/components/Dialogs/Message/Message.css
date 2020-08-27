@@ -5,7 +5,7 @@
 
     max-width: 40%;
     border-radius: 30px;
-    background: rgba(216,103,148,0.4);
+    background: rgb(0, 126, 167);
 }
 
 .message_item_2 {
@@ -14,5 +14,5 @@
 
     width: 40%;
     border-radius: 30px;
-    background: rgba(216,103,148,0.4);
+    background: rgb(219, 84, 97);
 }

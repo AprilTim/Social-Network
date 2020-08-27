@@ -1,16 +1,20 @@
+import {userAPI} from "../API/api";
+
 let FOLLOW = 'FOLLOW'
 let UNFOLLOW = 'UNFOLLOW'
 let SET_USERS = 'SER-USERS'
 let SET_CURRENT_PAGE = 'SET-CURRENT-PAGE'
 let SET_TOTAL_COUNT_USER = 'SET-TOTAL-COUNT-USER'
 let TOGGLE_IS_LOADER = 'TOGGLE-IS-LOADER'
+let TOGGLE_IS_FOLLOWING_PROGRESS = 'TOGGLE-IS-FOLLOWING-PROGRESS'
 
 let initialState = {
     users: [],
     countPage: 10,
     totalCountUser: 0,
     currentPage: 1,
-    isLoading: false
+    isLoading: false,
+    followingInProgress: [],
 }
 
 const fineUsersReducer = (state = initialState, action) => {
@@ -44,17 +48,62 @@ const fineUsersReducer = (state = initialState, action) => {
             return {...state, totalCountUser: action.totalCountUser}
         case TOGGLE_IS_LOADER:
             return {...state, isLoading: action.isLoading}
+        case TOGGLE_IS_FOLLOWING_PROGRESS:
+            return {
+                ...state, followingInProgress: action.isLoading ?
+                    [...state.followingInProgress, action.userId]
+                    : state.followingInProgress.filter(id => id != action.userId)
+            }
         default:
             return state;
     }
 
 }
 
-export const follow = (userId) => ({type: FOLLOW, userId})
-export const unfollow = (userId) => ({type: UNFOLLOW, userId})
+export const followSuccess = (userId) => ({type: FOLLOW, userId})
+export const unfollowSuccess = (userId) => ({type: UNFOLLOW, userId})
 export const setUsers = (users) => ({type: SET_USERS, users})
 export const setCurrentPage = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage})
 export const setTotalCountPage = (totalCountUser) => ({type: SET_TOTAL_COUNT_USER, totalCountUser})
 export const toggleIsLoader = (isLoading) => ({type: TOGGLE_IS_LOADER, isLoading})
+export const toggleIsFollowing = (isLoading, userId) => ({type: TOGGLE_IS_FOLLOWING_PROGRESS, isLoading, userId})
+
+export const getUsersThunkCreator = (currentPage, pageSize) => {
+    return (dispatch) => {
+        dispatch(toggleIsLoader(true))
+
+        userAPI.getUsers(currentPage, pageSize).then(data => {
+            dispatch(toggleIsLoader(false))
+            dispatch(setUsers(data.items))
+            dispatch(setTotalCountPage(data.totalCount))
+        })
+    }
+}
+
+export const follow = (userId) => {
+    return (dispatch) => {
+        dispatch(toggleIsFollowing(true, userId))
+        userAPI.follow(userId)
+            .then(response => {
+                if (response.data.resultCode == 0) {
+                    dispatch(followSuccess(userId))
+                }
+                dispatch(toggleIsFollowing(false, userId))
+            })
+    }
+}
+
+export const unfollow = (userId) => {
+    return (dispatch) => {
+        dispatch(toggleIsFollowing(true, userId))
+        userAPI.unfollow(userId)
+            .then(response => {
+                if (response.data.resultCode == 0) {
+                    dispatch(unfollowSuccess(userId))
+                }
+                dispatch(toggleIsFollowing(false, userId))
+            })
+    }
+}
 
 export default fineUsersReducer;
