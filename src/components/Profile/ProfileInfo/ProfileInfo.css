@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400;600;700&display=swap");
+}
+
+.profileInfo-wrapper {
+    position: relative;
+    top: -75px;
+}
+
+.profile-info_sidebar {
+    display: grid;
+    grid-template-areas:
+          "a a"
+          "g s";
+    align-content: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.following {
+    grid-area: g;
+}
+
+.followers {
+    grid-area: s;
+}
+
+.nameStatus {
+    text-align: center;
+}
+
+.aboutMe {
+    padding: 2px 8px;
+
+    margin: 0 0 20px;
+
+    border-radius: 10px;
+    color: rgb(169, 51, 83);
+    background: rgb(216, 217, 238, 0.9);
+}
+
+.contacts {
+
+}
+
+.contacts__item {
+    padding: 10px;
+    border-top: 2px #DAD2D8 solid;
+}
+
+.work {
+    border-top: 10px #DAD2D8 solid;
+}
+
+.profile_avatar {
+    grid-area: a;
+    height: 150px;
+    width: 150px;
+
+    border: #6E6984 solid 4px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_avatar img {
+    height: 100%;
+}

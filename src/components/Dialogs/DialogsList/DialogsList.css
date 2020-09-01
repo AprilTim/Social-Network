@@ -1,0 +1,39 @@
+
+.dialogs_user{
+    padding: 15px 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    color: #0D1B1E;
+}
+
+.dialogs_user__item {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+
+.dialogs__userName {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.user_active {
+    font-size: 20px;
+    color: #6E6984;
+    background: rgba(223, 223, 223,0.9);
+    transition: 0.4s;
+}
+
+.dialogs_user:hover {
+    font-size: 21px;
+    color: #6E6984 ;
+    background: rgba(110, 105, 132,0.1);
+}
+
+

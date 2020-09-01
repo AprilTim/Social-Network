@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+/*    grid-area: h;*/
+    height: 50px;
+    width: 100%;
+
+    color: #DB5461;
+
+    background: #0D1B1E;
+    z-index: 1000;
+   /* box-shadow: 0 0 50px #fa448c;*/
+}
+
+.header_inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+}
+
+.header_logo {
+    width: 60px;
+}
+
+.headerText {
+    margin: 5px 20px 0;
+    font-size: 26px;
+}
+
+.login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0;
+    font-size: 20px;
+}
+
+.loginMenu {
+    content: '';
+    position: absolute;
+    top: 0;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 200%;
+
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.login:hover .loginMenu {
+    display: flex;
+    height: 100px;
+    top:100%;
+    opacity: 1;
+
+    font-size: 16px;
+    border-radius: 4px;
+    background: rgba(223,223,223,1);
+}
+
+.loginMenu .btn {
+    width: 100%;
+    border: none;
+    border-top: #dad2d8 solid 2px;
+    background: none;
+    color: #0D1B1E;
+}

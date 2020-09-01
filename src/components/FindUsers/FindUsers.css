@@ -1,0 +1,51 @@
+
+.find_user_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 245px);
+    justify-content: center;
+    grid-gap: 73px;
+}
+
+.find_user {
+    width: 245px;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    background: #dfdfdf;
+    box-shadow: 0 0 25px rgba(105,82,111,0.05);
+}
+
+.find_user a {
+    width: 80%;
+}
+
+.find_user__item {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.userDicription {
+    width: 100%;
+    text-align: center;
+}
+
+.userDicription__inner {
+    padding-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    border-top: 1px #DAD2D8 solid;
+}
+
+.userDicription__adress {
+    text-align: right;
+}
+
+.selectedPage {
+    color: gold;
+}

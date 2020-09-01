@@ -1,0 +1,18 @@
+
+.message_item_1 {
+    margin: 10px 0 0 auto;
+    padding: 10px;
+
+    max-width: 40%;
+    border-radius: 30px;
+    background: rgba(255, 174, 3, 0.3);
+}
+
+.message_item_2 {
+    margin: 10px 0;
+    padding: 10px;
+
+    width: 40%;
+    border-radius: 30px;
+    background: rgba(219, 84, 97,0.3);
+}

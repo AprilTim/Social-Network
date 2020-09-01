@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="903e21e1-c44d-4c6f-8de1-e1db6dbe83d1" name="Default Changelist" comment="" />
+    <list default="true" id="903e21e1-c44d-4c6f-8de1-e1db6dbe83d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.idea/my-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/API/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/assets/img/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/assets/img/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/DialogsContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/DialogsList/DialogsList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/DialogsList/DialogsList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Message/Message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Message/Message.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/FindUsers/FindUsers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/FindUsers/FindUsers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/FindUsers/FindUsersContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/FindUsers/Loading.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/FindUsers/Loading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Header/Header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Header/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Header/HeaderContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Nav/Friends/Friends.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Nav/Friends/Friends.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Nav/Nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Nav/Nav.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Nav/NavbarConteiner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/News.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/MyPosts/MyPosts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/MyPosts/MyPosts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/MyPosts/MyPostsContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/MyPosts/Post/Post.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/MyPosts/Post/Post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/MyPosts/Post/UserAvatar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/Profile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/ProfileContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/ProfileInfo/ProfileInfo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/ProfileInfo/ProfileInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile/ProfileInfo/ProfileStatus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/auth-me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/dialogs-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/findUsers-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/navbar-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/profile-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/reduxStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/redux/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/setupTests.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +90,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -30,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597674483110</updated>
       <workItem from="1597674484175" duration="64000" />
+      <workItem from="1598968731193" duration="158000" />
     </task>
     <servers />
   </component>

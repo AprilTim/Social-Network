@@ -1,0 +1,33 @@
+.loginContainer {
+    padding: 20px;
+    margin: 120px auto 0;
+    width: 33.33333%;
+    text-align: center;
+    border-radius: 4px;
+    background: rgba(223, 223, 223, 0.5);
+    box-shadow: 0 0 25px rgba(105,82,111,0.05);
+    animation: show 0.5s ease;
+}
+
+.login_header {
+    font-size: 35px;
+}
+
+.loginForm {
+    margin: 20px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translate(0,50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
