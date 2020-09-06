@@ -5,10 +5,17 @@ import {
     unfollow,
     setCurrentPage,
     setTotalCountPage,
-    toggleIsLoader, toggleIsFollowing, getUsersThunkCreator
+    toggleIsLoader, toggleIsFollowing, getUsersThunkCreator, searchUser
 } from "../../redux/findUsers-reducer";
 import FindUsers from "./FindUsers";
 import Loading from "../Common/Loader/Loading";
+import {
+    getCountPage, getCurrentPage,
+    getFollowingInProgress,
+    getIsLoading, getPageSize,
+    getTotalUsersCount,
+    getUsers
+} from "../../redux/selectors/FindUsersSelectors";
 
 class FindUsersAPI extends React.Component {
     componentDidMount() {
@@ -18,28 +25,34 @@ class FindUsersAPI extends React.Component {
     onChangeCurrentPage = (pageNum) => {
         this.props.toggleIsLoader(true)
         this.props.setCurrentPage(pageNum)
-        this.props.getUsersThunkCreator(pageNum,this.props.pageSize)
+        this.props.getUsersThunkCreator(pageNum, this.props.pageSize)
     }
 
     render() {
         return <>
-            { this.props.findUsersPage.isLoading ? <Loading/>:
-            <FindUsers findUsersPage={this.props.findUsersPage}
-                       onChangeCurrentPage={this.onChangeCurrentPage}
-                       unfollow={this.props.unfollow}
-                       follow={this.props.follow}
-                       followingInProgress={this.props.findUsersPage.followingInProgress}/>}
+            {this.props.isLoading ? <Loading/> :
+                <FindUsers {...this.props}
+                           onChangeCurrentPage={this.onChangeCurrentPage}
+                    /*users={this.props.users}
+                    onChangeCurrentPage={this.onChangeCurrentPage}
+                    unfollow={this.props.unfollow}
+                    follow={this.props.follow}
+                    followingInProgress={this.props.followingInProgress}
+                    totalCountUser={this.props.totalCountUser}
+                    countPage={this.props.countPage}
+                    currentPage={this.props.currentPage}
+                    pageSize={this.props.pageSize}*//>}
         </>
     }
 }
 
-let mapStateToProps = (state) => {
+/*let mapStateToProps = (state) => {
     return {
         findUsersPage: state.findUsersPage,
         currentPage: state.findUsersPage.currentPage,
         pageSize: state.findUsersPage.pageSize
     }
-}
+}*/
 
 /*let mapDispacthToProps = (dispatch) => {
     return {
@@ -64,9 +77,23 @@ let mapStateToProps = (state) => {
     }
 }*/
 
-const FindUsersContainer = connect(mapStateToProps, {follow,unfollow,
+let mapStateToProps = (state) => {
+    return {
+        followingInProgress: getFollowingInProgress(state),
+        isLoading: getIsLoading(state),
+        users: getUsers(state),
+        totalItemsCount: getTotalUsersCount(state),
+        countPage: getCountPage(state),
+        currentPage: getCurrentPage(state),
+        pageSize: getPageSize(state)
+    }
+}
+
+const FindUsersContainer = connect(mapStateToProps, {
+    follow, unfollow,
     setCurrentPage,
-    setTotalCountPage,toggleIsLoader,
-    toggleIsFollowing,getUsersThunkCreator})(FindUsersAPI)
+    setTotalCountPage, toggleIsLoader,
+    toggleIsFollowing, getUsersThunkCreator,searchUser
+})(FindUsersAPI)
 
 export default FindUsersContainer;

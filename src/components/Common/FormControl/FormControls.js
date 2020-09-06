@@ -11,7 +11,7 @@ const Input = ({input,meta,...props}) => {
         <div className="input_custom">
             <input className={`input _loginInput ${meta.visited && meta.invalid ? "input_custom_warn":""}`} {...input} {...props}/>
             {/*{meta.visited && meta.error &&  <div className="input_custom_error">{meta.error}</div>}*/}
-            <div className={`input_custom_error ${meta.visited && meta.error ? "showError":""}`}>{meta.error}</div>
+            <div className={`input_custom_error ${meta.visited && (props.error || meta.error) ? "showError":""}`}>{meta.error || props.error}</div>
         </div>
     )
 }

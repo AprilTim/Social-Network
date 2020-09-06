@@ -1,71 +1,117 @@
-
 @font-face {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300;400;600;700&display=swap");
 }
 
-.profileInfo-wrapper {
+.profileInfo {
+
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    line-height: 30px;
+    background: #dfdfdf;
+    box-shadow: 0 0 25px rgba(105, 82, 111, 0.05);
+}
+
+.profileInfo_wrapper {
     position: relative;
     top: -75px;
+    text-align: center;
+
 }
 
-.profile-info_sidebar {
-    display: grid;
-    grid-template-areas:
-          "a a"
-          "g s";
-    align-content: center;
-    justify-content: center;
+.profileInfo_header {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
 
     text-align: center;
 }
 
-.following {
-    grid-area: g;
+.profileInfo_header:after {
+    content: '';
+    margin: 5px 0;
+    border: 1px solid #DB5461;
 }
 
-.followers {
-    grid-area: s;
+.followed {
+    display: flex;
+    justify-content: space-around;
 }
 
-.nameStatus {
+.followed > * {
+    width: 100%;
+}
+
+.profileInfo_description_title {
     text-align: center;
 }
 
-.aboutMe {
+.profileInfo_aboutMe {
     padding: 2px 8px;
 
-    margin: 0 0 20px;
+    margin: 0 10px 20px;
 
     border-radius: 10px;
     color: rgb(169, 51, 83);
+    text-align: center;
     background: rgb(216, 217, 238, 0.9);
 }
 
-.contacts {
+.profileInfo_contacts {
 
 }
 
-.contacts__item {
+.profileInfo_contacts_item {
     padding: 10px;
     border-top: 2px #DAD2D8 solid;
+    text-align: left;
 }
 
-.work {
+.profileInfo_contacts_item::first-letter {
+    text-transform: uppercase;
+}
+
+.profileInfo_work {
     border-top: 10px #DAD2D8 solid;
+    text-align: left;
 }
 
-.profile_avatar {
-    grid-area: a;
-    height: 150px;
-    width: 150px;
+.inputFile_block {
+    display: none;
+    padding: 1em;
 
-    border: #6E6984 solid 4px;
+    position: absolute;
+    right: 50%;
+    bottom: -25%;
+    transform: translateX(50%);
+    border-radius: 4px;
+    background: #6E6984;
+}
+
+.inputFile {
+
+}
+
+.showInputFile {
+    display: block;
+}
+
+._circle {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 42px;
+
+    background: #ffae03;
     border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile_avatar img {
-    height: 100%;
 }

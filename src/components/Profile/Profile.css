@@ -7,23 +7,12 @@
 
 .MyPost {
     margin: 50px auto;
-    width: 50%;
-}
-
-.profile_info {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    line-height: 30px;
-    background: #dfdfdf;
-    box-shadow: 0 0 25px rgba(105,82,111,0.05);
+    width: 75%;
 }
 
 .profile_img {
     position: absolute;
-    top: 50px;
+    top: 0;
     z-index: -1;
     left: 0;
     height: 300px;

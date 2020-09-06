@@ -12,11 +12,12 @@ const Profile = (props) => {
 
     return (
         <div className='profile-container'>
-
             <ProfileInfo profile={props.profile}
                          isContacts={props.isContacts}
                          status={props.status}
-                         updateStatus={props.updateStatus}/>
+                         updateStatus={props.updateStatus}
+                         setNewPhoto={props.setNewPhotoThunk}
+                         updateProfileThunk={props.updateProfileThunk}/>
             <MyPostsContainer store={props.store}/>
         </div>
     );

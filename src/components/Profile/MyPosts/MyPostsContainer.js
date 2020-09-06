@@ -1,6 +1,10 @@
 import React from 'react';
 import './MyPosts.css';
-import {addPostActionCreator, /*updateNewPostTextActionCreator*/} from "../../../redux/profile-reducer";
+import {
+    addPostActionCreator,
+    deletePostAC,
+    likesChange, /*updateNewPostTextActionCreator*/
+} from "../../../redux/profile-reducer";
 import MyPosts from "./MyPosts";
 import {connect} from "react-redux";
 
@@ -34,6 +38,12 @@ let mapDispatchToProps = (dispatch) => {
         addPost: (newPost) => {
             dispatch(addPostActionCreator(newPost));
         },
+        deletePost: (id) => {
+            dispatch(deletePostAC(id))
+        },
+        likesChange: (id) => {
+            dispatch(likesChange(id))
+        }
        /* updateNewPostText: (text) => {
             dispatch(updateNewPostTextActionCreator(text))}*/
     }

@@ -1,0 +1,63 @@
+.search {
+    padding: 0.5em 1em;
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+    background: #dfdfdf;
+    border-radius: 4px;
+
+    &_input {
+        display: block;
+        font-size: 26px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #dfdfdf;
+    }
+}
+
+
+
+.findUser {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 245px);
+    justify-content: center;
+    grid-gap: 73px;
+
+    &_container {
+        width: 245px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 4px;
+        background: #dfdfdf;
+        box-shadow: 0 0 25px rgba(105,82,111,0.05);
+
+        & a {
+            width: 80%;
+        }
+    }
+
+    &_item {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+}
+
+.userDecription {
+    width: 100%;
+    text-align: center;
+
+    &_inner {
+        padding-top: 20px;
+        width: 100%;
+        font-size: 16px;
+        border-top: 1px #DAD2D8 solid;
+    }
+}

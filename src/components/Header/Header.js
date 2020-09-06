@@ -12,7 +12,7 @@ const Header = (props) => {
                         :<NavLink to={'/login'}>LOGIN</NavLink>}
                         <div className="loginMenu">
                             <NavLink className="btn" to={'/login'}>Login</NavLink>
-                            <button className="btn">Logout</button>
+                            <button onClick={props.logout} className="btn">Logout</button>
                         </div>
                 </div>
             </div>

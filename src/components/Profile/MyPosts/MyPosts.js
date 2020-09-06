@@ -20,10 +20,15 @@ const PostReduxForm = reduxForm({form: "post"})(postForm)
 const MyPosts = (props) => {
 
     let postItem =
-        props.profilePage.postsData.map(el => <Post key={el.id} message={el.message} likeCount={el.likeCount}/>)
+        props.profilePage.postsData.map(el => <Post deletePost={props.deletePost}
+                                                    likesChange={props.likesChange}
+                                                    postId={`${el.id}${el.message}`}
+                                                    id={el.id}
+                                                    key={`${el.id}${el.message}`}
+                                                    message={el.message}
+                                                    likeCount={el.likeCount}/>)
 
     let sendPost = (value) => {
-        console.log(value)
         props.addPost(value.newPost)
     }
 
